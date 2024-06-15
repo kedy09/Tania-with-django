@@ -1,0 +1,45 @@
+{% extends '_base.html' %} {% load static %} 
+{% block title %}
+Home page
+{%endblock title %} {% block content %}
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <img
+    src="{% static 'images/logo.png' %}"
+    class="img-fluid"
+    alt="DjangoX logo"
+  />
+  <p class="lead">A Django starter project By Tania.</p>
+</div>
+<div class="container">
+  <p>
+    Ce projet Django est conçu comme un point de départ
+    complet pour le développement web. Il utilise la dernière version de Django
+    (5.0) et Python (3.12) pour offrir une base solide et moderne.
+  </p>
+  <p>Le contenu actuel du projet comprend :</p>
+  <ul>
+    <li>
+      Gestion de la connexion, de l'inscription et de la réinitialisation de mot
+      de passe des utilisateurs via l'intégration de django-allauth.
+    </li>
+    <li>
+      Configuration des fichiers statiques avec Whitenoise pour une meilleure
+      performance.
+    </li>
+    <li>
+      Styling en utilisant le framework Bootstrap v5 pour une interface
+      utilisateur élégante et responsive.
+    </li>
+    <li>Débogage avancé grâce à l'intégration de django-debug-toolbar.</li>
+    <li>Formulaires simplifiés et réutilisables avec django-crispy-forms.</li>
+    <li>Pages d'erreur personnalisées pour les codes 404, 500 et 403.</li>
+  </ul>
+  <p>
+    Ce projet fournit ainsi une base solide et prête à l'emploi pour le
+    développement de sites web et d'applications Django. Il permet aux
+    développeurs de se concentrer sur la logique métier de leur projet plutôt
+    que sur la configuration de l'environnement de développement.
+  </p>
+</div>
+{% endblock content %}
